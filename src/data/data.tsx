@@ -1,7 +1,6 @@
 import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
-  BuildingOffice2Icon,
   CalendarIcon,
   FlagIcon,
   MapIcon,
@@ -11,8 +10,6 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -39,6 +36,7 @@ import {
   TestimonialSection,
   TimelineItem,
 } from './dataDef';
+import React from 'react';
 
 /**
  * Page meta data
@@ -69,18 +67,17 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Donovan Lee.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm currently a <strong className="text-stone-100">Penultimate Year Computer Science </strong> student at the
+        <strong className="text-stone-100"> National University of Singapore (NUS). </strong> I am an aspiring Software Engineer 
+        who loves developing solutions to modern problems.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time time, I <strong className="text-stone-100">love to gym. </strong> I
+        <strong className="text-stone-100"> play the guitar</strong> too, though I have been pretty rusty lately..
       </p>
     </>
   ),
@@ -104,16 +101,16 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `As an individual, I possess a keen eye for perfection and thrive on overcoming challenges. 
+  This intrinsic drive has been a guiding force throughout my journey as a Computer Science student.
+  My engagement in various internships and projects, complemented by my academic pursuits, has finely honed my technical expertise
+  in the realm of Computer Science.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Singapore', Icon: MapIcon},
+    {label: 'Age', text: '23', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Singaporean', Icon: FlagIcon},
+    {label: 'Interests', text: 'Gym, Play Guitar, Watch Netflix', Icon: SparklesIcon},
+    {label: 'Study', text: 'National University of Singapore', Icon: AcademicCapIcon},
   ],
 };
 
@@ -129,7 +126,7 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
-        name: 'French',
+        name: 'Chinese',
         level: 4,
       },
       {
@@ -268,39 +265,52 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'August 2021 - Present',
+    location: 'Bachelor of Computing, Computer Science',
+    title: 'National University of Singapore (NUS)',
+    content: <p><strong>Grade: First Class Honours</strong><br/>
+    <strong>Activities and societies:</strong><br/>
+    Member of Sheares Media Design Club, Sheares Hall Voluntary Corps<br/>
+    Member of Sheares Swim, Tchoukball<br/>
+    Participated in NUS HacknRoll 2022<br/>
+    Participated in NUS LifeHack Hackathon 2022</p>   
+    ,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2017 - 2018',
+    location: 'Physics, Chemistry, Mathematics, Economics',
+    title: 'Victoria Junior College (VJC)',
+    content: <p><strong>Grade: 87.5/90</strong><br/>
+    <strong>Activities and societies:</strong><br/>
+    Member of VJC Dance<br/>
+    Member of Science Society</p>  
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'May 2023 - October 2023',
+    location: 'Inland Revenue Authority of Singapore',
+    title: 'Software Engineer Intern',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+      <p> I played a key role in developing a feature that allows the distribution of user notifications in PDF format, 
+          utilising .NET Core in conjunction with Adobe Experience Manager (AEM). 
+          My responsibilities included conducting thorough frontend and backend unit testing, incorporating API validation through tools like Jasmine, 
+          XUnit, and Postman to ensure the smooth functionality of both user interfaces and APIs. Additionally, I established a well-organised database schema 
+          crucial for implementing our team's API using Entity Framework Core. 
+          I also took charge of implementing a User Interface (UI) screen using Angular based on Figma requirements. 
+          To facilitate our team's frontend local testing process, I configured frontend mock servers.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'May 2022 - July 2022',
+    location: 'Checked',
+    title: 'Frontend Developer Intern',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        I developed multiple screens using React and applied stylish layouts using Bootstrap.
+        I also took charge of identifying and fixing bugs, implementing improvements to ensure a smoother and more intuitive user experience.
       </p>
     ),
   },
@@ -313,19 +323,12 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Jaclyn Huan, Senior Assistant Director (Infocomm Division - Infocomm Application Development Centre)',
+      text: 'Donovan has a positive working attitude and is also inquisitive, proactive, and a valuable part of the team.',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      name: 'Justin Soh, Senior Manager (Infocomm Division - Infocomm Application Development Centre)',
+      text: 'Donovan is very inquisitive about our work and is also a fast learner. He is also able to understand the meaning behind each process, and executes his tasks properly.',
     },
   ],
 };
@@ -335,28 +338,28 @@ export const testimonial: TestimonialSection = {
  */
 
 export const contact: ContactSection = {
-  headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  headerText: 'Contact Me',
+  description: 'Feel free to drop me a message or contact me through my social media.',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'donovanlee_25@hotmail.com',
+      href: 'mailto:donovanlee_25@hotmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Singapore, Singapore',
+      href: 'https://www.google.com.sg/maps/place/Singapore/@1.3143379,103.6794349,11z/',
     },
     {
       type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: '@24Donovan24',
+      href: 'https://www.instagram.com/24Donovan24/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: '24Donovan24',
+      href: 'https://github.com/24Donovan24',
     },
   ],
 };
@@ -365,9 +368,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/24Donovan24'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/donovan-lee-45255b234/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/24Donovan24/'}
 ];
