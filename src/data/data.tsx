@@ -42,8 +42,8 @@ import React from 'react';
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Donovan Lee',
+  description: "Donovan's portfolio websites",
 };
 
 /**
@@ -83,7 +83,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '/DonovanLeeJunHao_Resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
