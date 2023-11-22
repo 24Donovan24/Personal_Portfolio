@@ -64,8 +64,7 @@ export interface Stat {
 
 export interface Skill {
   name: string;
-  level: number;
-  max?: number;
+  image?: string;
 }
 
 export interface SkillGroup {
@@ -147,4 +146,13 @@ export interface Social {
   label: string;
   Icon: FC<IconProps>;
   href: string;
+}
+
+/**
+ * Logo icons
+ */
+export interface LogoWithText {
+  src: string;
+  alt: string;
+  text: string;
 }

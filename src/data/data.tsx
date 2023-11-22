@@ -31,7 +31,6 @@ import {
   Hero,
   HomepageMeta,
   PortfolioItem,
-  SkillGroup,
   Social,
   TestimonialSection,
   TimelineItem,
@@ -117,42 +116,37 @@ export const aboutData: About = {
 /**
  * Skills section
  */
-export const skills: SkillGroup[] = [
-  {
-    name: 'Languages',
-    skills: [
-      {
-        name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
-      },
-    ],
-  },
-  {
-    name: 'Libraries, Frameworks, and Tools',
-    skills: [
-      {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
-      },
-    ],
-  },
-];
+// export const skills: SkillGroup[] = [
+//   {
+//     name: 'Languages',
+//     skills: [
+//       {
+//         name: 'React',
+//         image: '../images/portfolio/portfolio-1.jpg'
+//       },
+//       {
+//         name: 'Typescript',
+//       },
+//       {
+//         name: 'GraphQL',
+//       },
+//     ],
+//   },
+//   {
+//     name: 'Libraries, Frameworks, and Tools',
+//     skills: [
+//       {
+//         name: 'Node.js',
+//       },
+//       {
+//         name: 'Rust',
+//       },
+//       {
+//         name: 'Golang',
+//       },
+//     ],
+//   },
+// ];
 
 /**
  * Portfolio section
