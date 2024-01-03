@@ -63,8 +63,9 @@ export interface Stat {
  */
 
 export interface Skill {
-  name: string;
-  image?: string;
+  src: string;
+  alt: string;
+  text: string;
 }
 
 export interface SkillGroup {

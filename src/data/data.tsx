@@ -21,6 +21,7 @@ import {
   Hero,
   HomepageMeta,
   PortfolioItem,
+  SkillGroup,
   Social,
   TestimonialSection,
   TimelineItem,
@@ -105,37 +106,108 @@ export const aboutData: About = {
 /**
  * Skills section
  */
-// export const skills: SkillGroup[] = [
-//   {
-//     name: 'Languages',
-//     skills: [
-//       {
-//         name: 'React',
-//         image: '../images/portfolio/portfolio-1.jpg'
-//       },
-//       {
-//         name: 'Typescript',
-//       },
-//       {
-//         name: 'GraphQL',
-//       },
-//     ],
-//   },
-//   {
-//     name: 'Libraries, Frameworks, and Tools',
-//     skills: [
-//       {
-//         name: 'Node.js',
-//       },
-//       {
-//         name: 'Rust',
-//       },
-//       {
-//         name: 'Golang',
-//       },
-//     ],
-//   },
-// ];
+export const skills: SkillGroup[] = [
+  {
+    name: 'Languages',
+    skills: [
+      {
+        alt: 'Java',
+        src: '/java.png',
+        text: 'Java'
+      },
+      {
+        alt: 'Python',
+        src: '/python.png',
+        text: 'Python'
+      },
+      {
+        alt: 'JavaScript',
+        src: '/javascript.png',
+        text: 'JavaScript'
+      },
+      {
+        alt: 'C',
+        src: '/c.png',
+        text: 'C'
+      },
+      {
+        alt: 'C#',
+        src: '/csharp.png',
+        text: 'C#'
+      },
+      {
+        alt: 'HTML',
+        src: '/html.png',
+        text: 'HTML'
+      },
+      {
+        alt: 'CSS',
+        src: '/css.png',
+        text: 'CSS'
+      },
+      {
+        alt: 'SQL',
+        src: '/sql.png',
+        text: 'SQL'
+      }
+    ],
+  },
+  {
+    name: 'Libraries and Frameworks',
+    skills: [
+      {
+        alt: 'React',
+        src: '/react.png',
+        text: 'React'
+      },
+      {
+        alt: 'Angular',
+        src: '/angular.png',
+        text: 'Angular'
+      },
+      {
+        alt: 'Node.js',
+        src: '/node.png',
+        text: 'Node.js'
+      },
+      {
+        alt: '.NET Core',
+        src: '/net.png',
+        text: '.NET Core'
+      }
+    ],
+  },
+  {
+    name: 'Databases',
+    skills: [
+      {
+        alt: 'Microsoft SQL',
+        src: '/microsoftsql.png',
+        text: 'Microsoft SQL'
+      },
+      {
+        alt: 'PostgreSQL',
+        src: '/postgresql.png',
+        text: 'PostgreSQL'
+      }
+    ],
+  },
+  {
+    name: 'DevOps',
+    skills: [
+      {
+        alt: 'Azure DevOps',
+        src: '/azure.png',
+        text: 'Azure DevOps'
+      },
+      {
+        alt: 'Docker',
+        src: '/docker.png',
+        text: 'Docker'
+      }
+    ],
+  },
+];
 
 /**
  * Portfolio section
@@ -160,7 +232,7 @@ export const portfolioItems: PortfolioItem[] = [
 ];
 
 /**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
+ * Resume section
  */
 export const education: TimelineItem[] = [
   {
