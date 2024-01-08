@@ -11,9 +11,9 @@ import React from 'react';
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
+import testimonialImage from '../images/background.webp';
+import heroImage from '../images/mountain.webp';
 import profilepic from '../images/profilepic.jpg';
-import heroImage from '../images/stars.webp';
-import testimonialImage from '../images/testimonial.webp';
 import {
   About,
   ContactSection,
